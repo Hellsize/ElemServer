@@ -1,6 +1,7 @@
 using LMServer;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("https://0.0.0.0:443");
 
 builder.Services.AddSignalR();
 
