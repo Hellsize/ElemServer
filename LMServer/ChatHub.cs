@@ -12,6 +12,8 @@ namespace LMServer
             await Clients.All.SendAsync("Receive", message_info);
         }
 
+       
+
         public override async Task OnConnectedAsync()
         {
             await Clients.All.SendAsync("Notify", $"{Context.ConnectionId} вошел в чат");

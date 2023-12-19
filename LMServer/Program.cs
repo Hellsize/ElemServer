@@ -11,7 +11,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-app.MapHub<ChatHub>("/chat");
+app.MapHub<ChatHub>("/chat1");
 
 
 app.Run();
